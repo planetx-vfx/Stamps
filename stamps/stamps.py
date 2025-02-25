@@ -2,8 +2,8 @@
 # Stamps by Adrian Pueyo and Alexey Kuchinski
 # Smart node connection system for Nuke
 # adrianpueyo.com, 2018-2021
-version= "v1.1"
-date = "May 18 2021"
+version= "v1.1.1"
+date = "February 25 2025"
 #-----------------------------------------------------
 
 # Constants
@@ -1879,7 +1879,7 @@ def nodeType(n=""):
         return "Particle"
     elif nodeClass.startswith("ScanlineRender"):
         return False
-    elif nodeClass in ["Camera", "Camera2", "Camera3"]:
+    elif nodeClass in ["Camera", "Camera2", "Camera3", "Camera4"]:
         return "Camera"
     elif nodeClass in ["Axis", "Axis2","Axis3"]:
         return "Axis"
